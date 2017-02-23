@@ -85,6 +85,19 @@ function onDeviceReady() {
         $(".slide-menu").slidemenu();
     });
 }
+//local code for the direct move to supplier
+
+function cliencode_check() {
+    var clientCode = localStorage.getItem("ClientCode");
+    if (clientCode == null || clientCode == "") {
+        window.location = "index01.html";
+    }
+    else {
+        window.location = "HomePage1.html";
+
+    }
+}
+
 function Reset() {
     if (confirm("Do you really want to Reset App?")) {
         window.localStorage.clear();
