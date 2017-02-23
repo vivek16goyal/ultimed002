@@ -762,7 +762,16 @@ function ReadOTP() {
         $("#divOTP").show();
     }, 16000);
 }
+function cliencode_check() {
+    var clientCode = localStorage.getItem("ClientCode");
+    if (clientCode != "") {
+        window.location="HomePage.html";
+    }
+    else {
+        window.location = "index01.html";
+    }
 
+}
 function closeVerification() {
     $("#divOTP").hide();
     clearInterval(showIntval);

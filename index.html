@@ -70,8 +70,9 @@
                     textAnim('LoText', 'bounceInUp');
                 }, 1000);
 
+
                 b = setTimeout(function () {
-                    window.location = "index01.html";
+                    $("#consumer").show();
                 }, 5000);
             }
             catch (e) {
@@ -97,8 +98,10 @@
        <div style="width:100%">
            <img id="8" src="assets/img/A2Z Dawa.png" style="width:80vw;height:35vh; margin-left:-10px; display:none"/>           
        </div>
-        <div id="LoText" style="display:none"> <label  style="color:#2b80a1;font-size:x-large;font-weight:bold;">We provide <a style ="font-weight :bold">UTIMED</a> for your Medicinal Need </label></div>
+        <div id="LoText" style="display:none"> <label  style="color:#2b80a1;font-size:x-large;font-weight:bold;">We provide <a style ="font-weight :bold">UTIMED</a>solution for your Medicinal Need </label></div>
      </div>
+
+      <div onload="cliencode_check()" id ="consumer"></div>
       </center>
     <p class="p-footer">
         Powered By: Goyal Bros & Co
