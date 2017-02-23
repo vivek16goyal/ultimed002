@@ -764,11 +764,12 @@ function ReadOTP() {
 }
 function cliencode_check() {
     var clientCode = localStorage.getItem("ClientCode");
-    if (clientCode != "") {
-        window.location="HomePage.html";
+    if (clientCode == null || clientCode=="") {
+       window.location = "index01.html";
     }
     else {
-        window.location = "index01.html";
+        window.location = "HomePage.html";
+      
     }
 
 }
